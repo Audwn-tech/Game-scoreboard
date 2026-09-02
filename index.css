@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+/* General */
+
+@font-face {
+    font-family: CursedTimer;
+    src: url("CursedTimer.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    background-color: #F4F1EA;
+}
+
+/* Scoreboard */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #006D77;
+    border: 3px solid #004E56;
+    color: white;
+    border-radius: 10px;
+    width: min(500px, 90vw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home,
+.guest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.leader {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #83C5BE;
+    margin: 0 0 10px;
+    height: 17px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#timer-display {
+    font-family: "CursedTimer", sans-serif;
+    font-size: 40px;
+    color: #ff9f38;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Score */
+
+.score-text {
+    font-family: "CursedTimer", sans-serif;
+    color: #ff9f38;
+    background-color: #000000;
+    font-size: 90px;
+    line-height: 1;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 10px 0 15px;
+    min-width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titles */
+
+.team-name {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    background-color: #004E56;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 90%;
+    max-width: 220px;
+    margin: 20px 0 10px;
+}
+
+.team-name:focus {
+    outline: 2px solid #ff9f38;
+}
+
+/* Buttons */
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #171717;
+    color: white;
+    border: 2px solid #ff9f38;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.reset {
+    margin-top: 20px;
+}
+
+#reset-btn:hover {
+    background-color: #6FA99F;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#reset-btn {
+    background-color: #83C5BE;
+    color: #004E56;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+#reset-btn:active {
+    transform: translateY(1px);
+}
+.add1-btn,
+.add2-btn,
+.add3-btn {
+    width: 50px;
+    height: 45px;
+    font-size: 18px;
+}
+
+/* Ads */
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+}
+
+.ad-side {
+    width: 160px;
+    height: 600px;
+    background-color: #eee;
+    color: #999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-bottom {
+    width: 728px;
+    height: 90px;
+    margin: 20px auto;
+    background-color: #eee;
+    color: #999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+
+/* Tablet / smaller screens */
+@media (max-width: 1000px) {
+    .ad-side {
+        display: none;
+    }
+
+    .ad-bottom {
+        max-width: 90%;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .scores {
+        gap: 10px;
+    }
+
+    .score-text {
+        font-size: 70px;
+        min-width: 110px;
+    }
+
+    .team-name {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
