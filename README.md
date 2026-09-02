@@ -1,4 +1,4 @@
-Scorekeeper
+Scorekeeper.
 
 A simple, responsive scorekeeping web app built with HTML, CSS, and JavaScript.
 
