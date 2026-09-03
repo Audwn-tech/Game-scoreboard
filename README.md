@@ -5,6 +5,7 @@ A simple, responsive scorekeeping web app built with HTML, CSS, and JavaScript.
 The project started as a basketball scoreboard, but the goal is to develop it into a flexible scorekeeper that can be used for different sports, games, and competitions.
 
 Features:
+
 Add 1, 2, or 3 points to either player or team
 Subtract points when needed
 Custom player/team names
